@@ -1,5 +1,5 @@
 <script>
-import axios from 'axios';
+
 import AppHeader from './components/AppHeader.vue';
 import ProjectCard from './components/ProjectCard.vue';
 
@@ -22,10 +22,7 @@ export default {
   <AppHeader />
   <ProjectCard />
 
-
-
-
-  <router-view></router-view>  
+  <router-view />
 </template>
 
 <style scoped>

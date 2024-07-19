@@ -1,6 +1,6 @@
 <script>
     export default {
-        name: 'AppHeader'
+        name: 'AppHeader',
     }
 
 </script>
@@ -16,10 +16,18 @@
 
                 <div class="col-6">
                     <ul class="row text-center">
-                        <li class="col-3">Link 1</li>
-                        <li class="col-3">Link 2</li>
-                        <li class="col-3">Link 3</li>
-                        <li class="col-3">Link 4</li>
+                        <li class="col-3">
+                            <router-link to="/">Home</router-link>
+                        </li>
+                        <li class="col-3">
+                            <router-link to="/about">About</router-link>
+                        </li>
+                        <li class="col-3">
+                            <router-link to="/contacts">Contact</router-link>
+                        </li>
+                        <li class="col-3">
+                            <router-link to="/projects">Projects</router-link>
+                        </li>
                     </ul>
                 </div>
 
@@ -32,6 +40,8 @@
             </div>
         </nav>
     </header>
+
+    <router-view></router-view>
 </template>
 
 <style scoped>
