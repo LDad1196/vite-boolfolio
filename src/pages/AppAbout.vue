@@ -1,6 +1,6 @@
 <script>
 
-import AppHeader from '../components/AppHeader.vue'
+
 
 
 
@@ -8,7 +8,7 @@ export default {
   name: 'AboutView',
 
   components: {
-    AppHeader,
+    
     
     
 
@@ -18,5 +18,7 @@ export default {
 </script>
 
 <template>
-    <AppHeader />
+    <div class="text-center">
+      <h2>Here all your questions</h2>
+    </div>
 </template>

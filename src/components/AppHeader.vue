@@ -9,7 +9,7 @@
 <template>
     <header>
         <nav class="container py-5 mb-5">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-3">
                     <h5>Welcome in BoolFolio</h5>
                 </div>
@@ -46,11 +46,7 @@
 
 <style scoped>
 
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
+    
     header {
         background-color: #222;
         color:white

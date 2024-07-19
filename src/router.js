@@ -1,6 +1,6 @@
 import { createMemoryHistory, createRouter } from 'vue-router'
 
-import HomeView from './App.vue';
+import HomeView from './pages/AppHome.vue';
 import AboutView from './pages/AppAbout.vue';
 import ContactsView from './pages/AppContacts.vue';
 import ProjectsView from './pages/AppProjects.vue';

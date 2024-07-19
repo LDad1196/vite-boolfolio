@@ -1,14 +1,12 @@
 <script>
-
-import AppHeader from '../components/AppHeader.vue'
-
+  import ProjectCard from '../components/ProjectCard.vue';
 
 
 export default {
   name: 'ProjectsView',
 
   components: {
-    AppHeader,
+    ProjectCard,
     
     
 
@@ -18,5 +16,5 @@ export default {
 </script>
 
 <template>
-    <AppHeader />
+    <ProjectCard />
 </template>
