@@ -1,4 +1,6 @@
 <script>
+import { RouterLink } from 'vue-router';
+
     export default {
         name: 'AppHeader',
     }
@@ -17,16 +19,16 @@
                 <div class="col-6">
                     <ul class="row text-center">
                         <li class="col-3">
-                            <router-link to="/">Home</router-link>
+                            <RouterLink to="/">Home</RouterLink>
                         </li>
                         <li class="col-3">
-                            <router-link to="/about">About</router-link>
+                            <RouterLink to="/about">About</RouterLink>
                         </li>
                         <li class="col-3">
-                            <router-link to="/contacts">Contact</router-link>
+                            <RouterLink to="/contacts">Contact</RouterLink>
                         </li>
                         <li class="col-3">
-                            <router-link to="/projects">Projects</router-link>
+                            <RouterLink to="/projects">Projects</RouterLink>
                         </li>
                     </ul>
                 </div>

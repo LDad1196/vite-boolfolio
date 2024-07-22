@@ -1,5 +1,6 @@
 <script>
 import axios from 'axios';
+import { RouterLink } from 'vue-router';
 
 export default {
     name: 'ProjectCard',
@@ -41,11 +42,15 @@ export default {
             <h2>{{ project.project_title }}</h2>
             <p class="c-red">Fatto da: {{ project.collaborators }}</p>
             <p>Con il framework: {{ project.framework }}</p>
+            <RouterLink class="btn btn-primary" to="/projects/:slug">More information</RouterLink>
+            
           </div>
         </div>
       </div>
     </div>
-  </div>      
+  </div>
+  
+  <router-view></router-view>
 </template>
 
 <style scoped>
