@@ -36,6 +36,7 @@ export default {
 </script>
 
 <template>
+    <h1>Hello</h1>
     <div v-if="project">
 
 
@@ -51,7 +52,7 @@ export default {
     
     
         <div class="container">
-          <template v-if="!project.cover_image.startsWith('http')">
+          <template v-if="!project.thumb.startsWith('http')">
             <img class="img-fluid" :src="base_url + '/storage/' + project.thumb" alt="">
           </template>
           <template v-else>
@@ -63,7 +64,7 @@ export default {
         <RouterLink to="/projects" class="btn btn-primary">Back to Projects</RouterLink>
       </div>
 
-    <router-view></router-view>
+    
 </template>
 
 <style scoped>

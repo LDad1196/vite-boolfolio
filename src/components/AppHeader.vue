@@ -43,7 +43,7 @@ import { RouterLink } from 'vue-router';
         </nav>
     </header>
 
-    <router-view></router-view>
+    
 </template>
 
 <style scoped>
