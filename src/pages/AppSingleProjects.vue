@@ -1,5 +1,7 @@
 <script>
 import { RouterLink } from 'vue-router';
+import axios from 'axios';
+
 export default {
     name: 'SingleProject',
 
