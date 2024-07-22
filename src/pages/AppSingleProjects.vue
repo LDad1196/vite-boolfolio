@@ -8,13 +8,13 @@ export default {
     data() {
         return {
             base_url: 'http://127.0.0.1:8000',
-            project: null
+            project: null,
         }
     },
 
     mounted() {
         console.log(this.$route.params.slug);
-        const url = `${this.base_url}/api/projects/${this.$route.params.slug}`
+        const url = `${this.base_url}/api/projects/${this.$route.params.slug}`;
         console.log(url);
         console.log(this.project);
         axios
@@ -36,9 +36,9 @@ export default {
 </script>
 
 <template>
-    <h1>Hello</h1>
-    <div v-if="project">
-
+    
+    <div v-if="project" class="container">
+    
 
         <div class="p-5 mb-4 bg-light">
           <div class="container py-5">
@@ -51,7 +51,7 @@ export default {
         </div>
     
     
-        <div class="container">
+        <div>
           <template v-if="!project.thumb.startsWith('http')">
             <img class="img-fluid" :src="base_url + '/storage/' + project.thumb" alt="">
           </template>
