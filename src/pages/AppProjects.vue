@@ -43,7 +43,7 @@ export default {
             <h2>{{ project.project_title }}</h2>
             <p class="c-red">Fatto da: {{ project.collaborators }}</p>
             <p>Con il framework: {{ project.framework }}</p>
-            <router-link class="btn btn-primary" :to="{name: 'project', params: {slug: project.slug}}">More information</router-link>
+            <router-link class="btn btn-primary" :to="'/projects/' + project.slug">More information</router-link>
             
           </div>
         </div>
