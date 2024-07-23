@@ -30,6 +30,7 @@ export default {
 
 <template>
   <div class="container">
+    <h1 class="text-center my-3">My projects</h1>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
       <div class="col" v-for="project in projects.data">  
         <div class="card h-100 bg-warning" >

@@ -44,14 +44,14 @@ export default {
           <div class="container py-5">
             <h1 class="display-5 fw-bold">Project: {{ project.project_title }}</h1>
             <p class="col-md-8 fs-4">
-              {{ project.collaborators }}
+              Made by: {{ project.collaborators }}
             </p>
     
           </div>
         </div>
     
     
-        <div>
+        <div class="my-5">
           <template v-if="!project.thumb.startsWith('http')">
             <img class="img-fluid" :src="base_url + '/storage/' + project.thumb" alt="">
           </template>
